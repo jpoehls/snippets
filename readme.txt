@@ -1,0 +1,1 @@
+Just code snippets and sample projects that I'm keeping around for reference in future projects.
