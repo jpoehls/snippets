@@ -23,6 +23,7 @@ namespace Samples.DataImport
             using (var reader = new CsvReader(streamReader, true))
             {
                 ValidateHeaderRow(reader.GetFieldHeaders());
+                BeginTransaction();
 
                 long rowNumber = 1;
                 while (reader.ReadNextRecord())

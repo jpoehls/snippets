@@ -14,15 +14,22 @@ namespace Samples.DataImport
         private readonly IMyDataContextFactory DbFactory;
         protected MyDataContext Db { get; private set; }
 
-        protected override void BeginTransaction()
-        {
-            Db = DbFactory.CreateContext();
-        }
+		protected override void BeginTransaction()
+		{
+            if (Db != null)
+            {
+                throw new InvalidOperationException("A transaction is already in progress!");
+            }
+			Db = _dbFactory.CreateContext();
+		}
 
-        protected override void CommitTransaction()
-        {
-            Db.SubmitChanges();
-        }
+		protected override void CommitTransaction()
+		{
+			if (Db != null)
+			{
+				Db.SubmitChanges();
+			}
+		}
 
         public override void Dispose()
         {
