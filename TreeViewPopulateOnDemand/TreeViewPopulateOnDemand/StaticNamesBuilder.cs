@@ -19,7 +19,9 @@ namespace TreeViewPopulateOnDemand
                                       new TreeNode(x, prefix + x)
                                           {
                                               PopulateOnDemand = true,
-                                              Expanded = false
+                                              Expanded = false,
+                                              Target = "myframe",
+                                              NavigateUrl = "http://www.google.com"
                                           });
         }
 
