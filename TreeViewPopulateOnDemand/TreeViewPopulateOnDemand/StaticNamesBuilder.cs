@@ -20,6 +20,9 @@ namespace TreeViewPopulateOnDemand
                                           {
                                               PopulateOnDemand = true,
                                               Expanded = false,
+                                              // adding these next two should result in being able to
+                                              // click the + sign to expand this node
+                                              // or click on the node's text to open google.com in the iframe
                                               Target = "myframe",
                                               NavigateUrl = "http://www.google.com"
                                           });
