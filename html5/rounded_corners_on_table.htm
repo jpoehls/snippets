@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Rounded Corners on a Table with CSS</title>
+	<style>
+		table {
+			border-color: black;
+			border-style: solid;
+			border-width: 3px;
+			
+			width: 400px;
+			height: 300px;
+			
+    	-moz-border-radius: 10px;
+    	-webkit-border-radius: 10px;
+    	-khtml-border-radius: 10px;
+    	border-radius: 10px;
+		}
+		td {
+			text-align: center;
+			vertical-align: middle;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<tr><td>R1C1</td><td>R1C2</td></tr>
+		<tr><td>R2C1</td><td>R2C2</td></tr>
+	</table>
+</body>
+</html>
