@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClickOnceUpdateTest", "ClickOnceUpdateTest\ClickOnceUpdateTest.csproj", "{AAD02284-EAE4-4DBB-9CEB-A3607F647E6F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment Script", "Deployment Script", "{3F07D5A7-3819-456C-AE8B-12E13B9A64A6}"
+	ProjectSection(SolutionItems) = preProject
+		deploy.ps1 = deploy.ps1
+		mage.exe = mage.exe
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AAD02284-EAE4-4DBB-9CEB-A3607F647E6F}.Debug|x86.ActiveCfg = Debug|x86
+		{AAD02284-EAE4-4DBB-9CEB-A3607F647E6F}.Debug|x86.Build.0 = Debug|x86
+		{AAD02284-EAE4-4DBB-9CEB-A3607F647E6F}.Release|x86.ActiveCfg = Release|x86
+		{AAD02284-EAE4-4DBB-9CEB-A3607F647E6F}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
